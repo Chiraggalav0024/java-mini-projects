@@ -10,7 +10,7 @@ public class JDBCCRUD{
         try{
         Connection conn = DriverManager.getConnection(url, username, passwd);
         Statement stmt = conn.createStatement();
-        String sql = "insert into students(id,name,email)" + "values(5,'dheeraj','xy@gmail.com')";
+        String sql = "insert into students(id,name,email)" + "values(9,'dheeraj','xy@gmail.com')";
         int result = stmt.executeUpdate(sql);
         System.out.println("result:" + result);
          stmt.close();
